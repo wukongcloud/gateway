@@ -1,0 +1,116 @@
+name: Release
+
+permissions:
+  contents: read
+
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - "v*.*.*"
+
+jobs:
+  # For push event, we run benchmark test here because we need to
+  # include benchmark report in the release.
+  benchmark-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+      - uses: ./tools/github-actions/setup-deps
+
+      - name: Setup Graphviz
+        uses: ts-graphviz/setup-graphviz@b1de5da23ed0a6d14e0aeee8ed52fdd87af2363c  # v2.0.2
+
+      # Benchmark
+      - name: Run Benchmark tests
+        env:
+          KIND_NODE_TAG: v1.29.10
+          IMAGE_PULL_POLICY: IfNotPresent
+          # Args for benchmark test
+          BENCHMARK_RPS: 10000
+          BENCHMARK_CONNECTIONS: 100
+          BENCHMARK_DURATION: 30
+          BENCHMARK_CPU_LIMITS: 1000m
+          BENCHMARK_MEMORY_LIMITS: 2000Mi
+          BENCHMARK_REPORT_DIR: benchmark_report
+        run: make benchmark
+
+      - name: Package benchmark report
+        run: cd test/benchmark && zip -r benchmark_report.zip benchmark_report
+
+      - name: Upload Benchmark Report
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02  # v4.6.2
+        with:
+          name: benchmark_report
+          path: test/benchmark/benchmark_report.zip
+
+  release:
+    runs-on: ubuntu-22.04
+    needs: [benchmark-test]
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+
+      - name: Extract Release Tag and Commit SHA
+        id: vars
+        shell: bash
+        run: |
+          echo "release_tag=$(echo ${GITHUB_REF##*/})" >> $GITHUB_ENV
+          echo "without_v_release_tag=$(echo ${GITHUB_REF##*/v})" >> $GITHUB_ENV
+          echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
+
+      - name: Login to DockerHub
+        uses: docker/login-action@74a5d142397b4f367a81961eba4e8cd7edddf772  # v3.4.0
+        with:
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+      - name: Retag and push existing gateway-dev image
+        run: |
+          skopeo copy --all docker://docker.io/envoyproxy/gateway-dev:${{ env.sha_short }} docker://docker.io/envoyproxy/gateway:${{ env.release_tag }}
+
+      - name: Generate Release Artifacts
+        run: IMAGE_PULL_POLICY=IfNotPresent make generate-artifacts IMAGE=envoyproxy/gateway TAG=${{ env.release_tag }} OUTPUT_DIR=release-artifacts
+
+      - name: Build and Push EG Release Helm Chart
+        run: |
+          IMAGE_PULL_POLICY=IfNotPresent OCI_REGISTRY=oci://docker.io/envoyproxy CHART_VERSION=${{ env.release_tag }} IMAGE=docker.io/envoyproxy/gateway TAG=${{ env.release_tag }} make helm-package helm-push
+          IMAGE_PULL_POLICY=IfNotPresent OCI_REGISTRY=oci://docker.io/envoyproxy CHART_VERSION=${{ env.without_v_release_tag }} IMAGE=docker.io/envoyproxy/gateway TAG=${{ env.release_tag }} make helm-package helm-push
+
+      - name: Download Benchmark Report
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093  # v4.3.0
+        with:
+          name: benchmark_report
+          path: release-artifacts
+
+      - name: Build egctl multiarch binaries
+        run: |
+          make build-multiarch
+          tar -zcvf envoy-gateway_${{ env.release_tag }}_linux_amd64.tar.gz bin/linux/amd64/envoy-gateway
+          tar -zcvf envoy-gateway_${{ env.release_tag }}_linux_arm64.tar.gz bin/linux/arm64/envoy-gateway
+          tar -zcvf envoy-gateway_${{ env.release_tag }}_darwin_amd64.tar.gz bin/darwin/amd64/envoy-gateway
+          tar -zcvf envoy-gateway_${{ env.release_tag }}_darwin_arm64.tar.gz bin/darwin/arm64/envoy-gateway
+          tar -zcvf egctl_${{ env.release_tag }}_linux_amd64.tar.gz bin/linux/amd64/egctl
+          tar -zcvf egctl_${{ env.release_tag }}_linux_arm64.tar.gz bin/linux/arm64/egctl
+          tar -zcvf egctl_${{ env.release_tag }}_darwin_amd64.tar.gz bin/darwin/amd64/egctl
+          tar -zcvf egctl_${{ env.release_tag }}_darwin_arm64.tar.gz bin/darwin/arm64/egctl
+          zip -r egctl_${{ env.release_tag }}_windows_amd64.zip bin/windows/amd64/egctl
+
+      - name: Upload Release Manifests
+        uses: softprops/action-gh-release@da05d552573ad5aba039eaac05058a918a7bf631  # v2.2.2
+        with:
+          files: |
+            release-artifacts/install.yaml
+            release-artifacts/quickstart.yaml
+            release-artifacts/envoy-gateway-crds.yaml
+            release-artifacts/release-notes.yaml
+            release-artifacts/benchmark_report.zip
+            envoy-gateway_${{ env.release_tag }}_linux_amd64.tar.gz
+            envoy-gateway_${{ env.release_tag }}_linux_arm64.tar.gz
+            envoy-gateway_${{ env.release_tag }}_darwin_amd64.tar.gz
+            envoy-gateway_${{ env.release_tag }}_darwin_arm64.tar.gz
+            egctl_${{ env.release_tag }}_linux_amd64.tar.gz
+            egctl_${{ env.release_tag }}_linux_arm64.tar.gz
+            egctl_${{ env.release_tag }}_darwin_amd64.tar.gz
+            egctl_${{ env.release_tag }}_darwin_arm64.tar.gz
+            egctl_${{ env.release_tag }}_windows_amd64.zip
