@@ -24,9 +24,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/envoyproxy/gateway/internal/crypto"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/xds/bootstrap"
+	"github.com/wukongcloud/gateway/internal/crypto"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/xds/bootstrap"
 )
 
 func TestTLSConfig(t *testing.T) {

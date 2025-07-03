@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	envoygateway "github.com/envoyproxy/gateway"
+	envoygateway "github.com/wukongcloud/gateway"
 )
 
 func TestOpenAndReadGatewayCRDsFS(t *testing.T) {

@@ -16,7 +16,7 @@ import (
 	"github.com/urfave/cli/v2"
 	"google.golang.org/grpc"
 
-	pb "github.com/envoyproxy/gateway/proto/extension"
+	pb "github.com/wukongcloud/gateway/proto/extension"
 )
 
 func main() {

@@ -18,12 +18,12 @@ import (
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 	gwapiv1a2 "sigs.k8s.io/gateway-api/apis/v1alpha2"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/extension/registry"
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/message"
-	pb "github.com/envoyproxy/gateway/proto/extension"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/extension/registry"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/message"
+	pb "github.com/wukongcloud/gateway/proto/extension"
 )
 
 func TestRunner(t *testing.T) {

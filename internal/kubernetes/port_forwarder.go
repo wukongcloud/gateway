@@ -19,7 +19,7 @@ import (
 	"k8s.io/client-go/tools/portforward"
 	"k8s.io/client-go/transport/spdy"
 
-	netutil "github.com/envoyproxy/gateway/internal/utils/net"
+	netutil "github.com/wukongcloud/gateway/internal/utils/net"
 )
 
 type PortForwarder interface {

@@ -15,8 +15,8 @@ import (
 	"k8s.io/utils/ptr"
 	"sigs.k8s.io/yaml"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/utils/test"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/utils/test"
 )
 
 func TestApplyBootstrapConfig(t *testing.T) {

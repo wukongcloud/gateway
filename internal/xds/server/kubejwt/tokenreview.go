@@ -17,8 +17,8 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/utils"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/utils"
 )
 
 // GetKubernetesClient creates a Kubernetes client using in-cluster configuration.

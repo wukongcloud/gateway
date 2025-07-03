@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"k8s.io/utils/ptr"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/ir"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 func TestDetermineIPFamily(t *testing.T) {

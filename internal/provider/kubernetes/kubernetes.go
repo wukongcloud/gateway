@@ -23,10 +23,10 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/webhook"
 	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
-	ec "github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/message"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
+	ec "github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/message"
 )
 
 // Provider is the scaffolding for the Kubernetes provider. It sets up dependencies

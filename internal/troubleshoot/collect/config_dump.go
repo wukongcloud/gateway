@@ -18,7 +18,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
 
-	kube "github.com/envoyproxy/gateway/internal/kubernetes"
+	kube "github.com/wukongcloud/gateway/internal/kubernetes"
 )
 
 var _ tbcollect.Collector = &ConfigDump{}

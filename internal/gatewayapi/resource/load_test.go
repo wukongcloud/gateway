@@ -16,8 +16,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"sigs.k8s.io/yaml"
 
-	"github.com/envoyproxy/gateway/internal/utils/file"
-	"github.com/envoyproxy/gateway/internal/utils/test"
+	"github.com/wukongcloud/gateway/internal/utils/file"
+	"github.com/wukongcloud/gateway/internal/utils/test"
 )
 
 func TestIterYAMLBytes(t *testing.T) {

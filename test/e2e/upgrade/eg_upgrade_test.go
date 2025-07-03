@@ -21,9 +21,9 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/tlog"
 	"sigs.k8s.io/gateway-api/pkg/features"
 
-	"github.com/envoyproxy/gateway/test/e2e"
-	"github.com/envoyproxy/gateway/test/e2e/tests"
-	kubetest "github.com/envoyproxy/gateway/test/utils/kubernetes"
+	"github.com/wukongcloud/gateway/test/e2e"
+	"github.com/wukongcloud/gateway/test/e2e/tests"
+	kubetest "github.com/wukongcloud/gateway/test/utils/kubernetes"
 )
 
 func TestEGUpgrade(t *testing.T) {

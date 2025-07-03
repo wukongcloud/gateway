@@ -5,8 +5,8 @@ package v1alpha1
 import (
 	context "context"
 
-	apiv1alpha1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	scheme "github.com/envoyproxy/gateway/pkg/client/clientset/versioned/scheme"
+	apiv1alpha1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	scheme "github.com/wukongcloud/gateway/pkg/client/clientset/versioned/scheme"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

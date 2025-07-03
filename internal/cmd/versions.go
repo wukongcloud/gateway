@@ -8,7 +8,7 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/envoyproxy/gateway/internal/cmd/version"
+	"github.com/wukongcloud/gateway/internal/cmd/version"
 )
 
 // GetVersionCommand returns the version cobra command to be executed.

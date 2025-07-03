@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/envoyproxy/gateway/internal/cmd/egctl"
+	"github.com/wukongcloud/gateway/internal/cmd/egctl"
 )
 
 func main() {

@@ -20,7 +20,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 
-	"github.com/envoyproxy/gateway/internal/crypto"
+	"github.com/wukongcloud/gateway/internal/crypto"
 )
 
 func TestGetCertgenCommand(t *testing.T) {

@@ -20,8 +20,8 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/utils/ptr"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/ir"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 func translateTrafficFeatures(policy *egv1a1.ClusterSettings) (*ir.TrafficFeatures, error) {

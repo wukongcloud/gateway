@@ -11,8 +11,8 @@ import (
 
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
 )
 
 func Decode(cfgPath string) (*egv1a1.EnvoyGateway, error) {

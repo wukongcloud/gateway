@@ -19,7 +19,7 @@ import (
 	"github.com/exampleorg/envoygateway-extension/api/v1alpha1"
 	"google.golang.org/protobuf/types/known/anypb"
 
-	pb "github.com/envoyproxy/gateway/proto/extension"
+	pb "github.com/wukongcloud/gateway/proto/extension"
 )
 
 type Server struct {

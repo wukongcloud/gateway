@@ -17,8 +17,8 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/kubernetes"
 	"sigs.k8s.io/gateway-api/conformance/utils/suite"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi"
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/gatewayapi"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
 )
 
 func init() {
@@ -151,7 +151,7 @@ var BasicAuthTest = suite.ConformanceTest{
 			http.MakeRequestAndExpectEventuallyConsistentResponse(t, suite.RoundTripper, suite.TimeoutConfig, gwAddr, expectedResponse)
 		})
 
-		// https://github.com/envoyproxy/gateway/issues/2507
+		// https://github.com/wukongcloud/gateway/issues/2507
 		t.Run("request without matching routes ", func(t *testing.T) {
 			ns := "gateway-conformance-infra"
 			routeNN := types.NamespacedName{Name: "http-with-basic-auth-1", Namespace: ns}

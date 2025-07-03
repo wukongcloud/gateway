@@ -8,8 +8,8 @@ package gatewayapi
 import (
 	"sort"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
-	"github.com/envoyproxy/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 type XdsIRRoutes []*ir.HTTPRoute

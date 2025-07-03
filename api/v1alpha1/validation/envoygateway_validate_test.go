@@ -13,7 +13,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
 )
 
 var (

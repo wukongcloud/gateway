@@ -12,10 +12,10 @@ import (
 	"k8s.io/utils/ptr"
 	"sigs.k8s.io/yaml"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/utils/jsonpatch"
-	"github.com/envoyproxy/gateway/internal/utils/proto"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/utils/jsonpatch"
+	"github.com/wukongcloud/gateway/internal/utils/proto"
 )
 
 // ApplyBootstrapConfig applies the bootstrap config to the default bootstrap config and return the result config.

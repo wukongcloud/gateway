@@ -16,10 +16,10 @@ import (
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 	gwapiv1a2 "sigs.k8s.io/gateway-api/apis/v1alpha2"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/utils"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/utils"
 )
 
 // translateExtServiceBackendRefs translates external service backend references to route destinations.

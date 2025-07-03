@@ -11,7 +11,7 @@ import (
 
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	"github.com/envoyproxy/gateway/cmd/envoy-gateway/root"
+	"github.com/wukongcloud/gateway/cmd/envoy-gateway/root"
 )
 
 func main() {

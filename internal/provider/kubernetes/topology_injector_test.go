@@ -21,7 +21,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi"
+	"github.com/wukongcloud/gateway/internal/gatewayapi"
 )
 
 func TestProxyTopologyInjector_Handle(t *testing.T) {

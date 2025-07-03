@@ -16,9 +16,9 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	netutils "github.com/envoyproxy/gateway/internal/utils/net"
-	"github.com/envoyproxy/gateway/internal/utils/regex"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	netutils "github.com/wukongcloud/gateway/internal/utils/net"
+	"github.com/wukongcloud/gateway/internal/utils/regex"
 )
 
 const (

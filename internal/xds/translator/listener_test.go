@@ -16,7 +16,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/envoyproxy/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 func Test_toNetworkFilter(t *testing.T) {

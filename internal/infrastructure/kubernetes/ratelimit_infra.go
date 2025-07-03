@@ -12,7 +12,7 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/ratelimit"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/ratelimit"
 )
 
 // CreateOrUpdateRateLimitInfra creates the managed kube rate limit infra, if it doesn't exist.

@@ -21,10 +21,10 @@ import (
 	resourcev3 "github.com/envoyproxy/go-control-plane/pkg/resource/v3"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	extensionTypes "github.com/envoyproxy/gateway/internal/extension/types"
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/xds/types"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	extensionTypes "github.com/wukongcloud/gateway/internal/extension/types"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/xds/types"
 )
 
 func processExtensionPostRouteHook(route *routev3.Route, vHost *routev3.VirtualHost, irRoute *ir.HTTPRoute, em *extensionTypes.Manager) error {

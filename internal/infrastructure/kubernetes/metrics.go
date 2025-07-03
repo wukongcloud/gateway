@@ -5,7 +5,7 @@
 
 package kubernetes
 
-import "github.com/envoyproxy/gateway/internal/metrics"
+import "github.com/wukongcloud/gateway/internal/metrics"
 
 var (
 	resourceApplyTotal = metrics.NewCounter(

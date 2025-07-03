@@ -46,8 +46,8 @@ import (
 	"github.com/google/go-containerregistry/pkg/v1/types"
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/logging"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/logging"
 )
 
 const wasmTestData = "this is wasm plugin"

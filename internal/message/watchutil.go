@@ -13,9 +13,9 @@ import (
 
 	"github.com/telepresenceio/watchable"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/logging"
-	"github.com/envoyproxy/gateway/internal/metrics"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/metrics"
 )
 
 type Update[K comparable, V any] watchable.Update[K, V]

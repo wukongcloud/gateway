@@ -13,7 +13,7 @@ import (
 	jsonpatchv5 "github.com/evanphx/json-patch/v5"
 	"sigs.k8s.io/yaml"
 
-	"github.com/envoyproxy/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 // ApplyJSONPatches applies a series of JSONPatches to a provided JSON document.

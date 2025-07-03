@@ -12,7 +12,7 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
 )
 
 func Init(cfg *config.Server) error {

@@ -16,8 +16,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/envoyproxy/gateway/internal/crypto"
-	"github.com/envoyproxy/gateway/internal/utils"
+	"github.com/wukongcloud/gateway/internal/crypto"
+	"github.com/wukongcloud/gateway/internal/utils"
 )
 
 var ErrSecretExists = errors.New("skipped creating secret since it already exists")

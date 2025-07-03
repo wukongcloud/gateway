@@ -39,8 +39,8 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/tlog"
 	"sigs.k8s.io/gateway-api/pkg/consts"
 
-	"github.com/envoyproxy/gateway/internal/cmd/options"
-	"github.com/envoyproxy/gateway/internal/utils/helm"
+	"github.com/wukongcloud/gateway/internal/cmd/options"
+	"github.com/wukongcloud/gateway/internal/utils/helm"
 )
 
 var EGUpgradeTest = suite.ConformanceTest{

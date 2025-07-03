@@ -43,9 +43,9 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/suite"
 	"sigs.k8s.io/gateway-api/conformance/utils/tlog"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/kubernetes"
-	tb "github.com/envoyproxy/gateway/internal/troubleshoot"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/kubernetes"
+	tb "github.com/wukongcloud/gateway/internal/troubleshoot"
 )
 
 var (

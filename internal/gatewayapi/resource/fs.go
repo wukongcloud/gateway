@@ -11,7 +11,7 @@ import (
 	"io/fs"
 	"time"
 
-	envoygateway "github.com/envoyproxy/gateway"
+	envoygateway "github.com/wukongcloud/gateway"
 )
 
 var (

@@ -11,9 +11,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi"
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/proxy"
-	"github.com/envoyproxy/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/gatewayapi"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/proxy"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 func TestDeleteProxyService(t *testing.T) {

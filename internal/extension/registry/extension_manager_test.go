@@ -30,9 +30,9 @@ import (
 	fakeclient "sigs.k8s.io/controller-runtime/pkg/client/fake"
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
-	"github.com/envoyproxy/gateway/proto/extension"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
+	"github.com/wukongcloud/gateway/proto/extension"
 )
 
 func TestGetExtensionServerAddress(t *testing.T) {

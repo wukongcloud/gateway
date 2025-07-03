@@ -18,7 +18,7 @@ import (
 	"google.golang.org/protobuf/types/known/anypb"
 	"sigs.k8s.io/yaml"
 
-	_ "github.com/envoyproxy/gateway/internal/xds/extensions" // DON'T REMOVE: import of all extensions
+	_ "github.com/wukongcloud/gateway/internal/xds/extensions" // DON'T REMOVE: import of all extensions
 )
 
 var (

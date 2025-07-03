@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/testing/protocmp"
 
-	"github.com/envoyproxy/gateway/internal/utils/proto"
+	"github.com/wukongcloud/gateway/internal/utils/proto"
 )
 
 func TestGenerateHealthCheckFilter(t *testing.T) {

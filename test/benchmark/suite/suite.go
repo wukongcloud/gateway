@@ -26,9 +26,9 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/config"
 	"sigs.k8s.io/yaml"
 
-	opt "github.com/envoyproxy/gateway/internal/cmd/options"
-	kube "github.com/envoyproxy/gateway/internal/kubernetes"
-	prom "github.com/envoyproxy/gateway/test/utils/prometheus"
+	opt "github.com/wukongcloud/gateway/internal/cmd/options"
+	kube "github.com/wukongcloud/gateway/internal/kubernetes"
+	prom "github.com/wukongcloud/gateway/test/utils/prometheus"
 )
 
 const (

@@ -14,8 +14,8 @@ import (
 	tls "github.com/envoyproxy/go-control-plane/envoy/extensions/transport_sockets/tls/v3"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/envoyproxy/gateway/internal/extension/types"
-	"github.com/envoyproxy/gateway/proto/extension"
+	"github.com/wukongcloud/gateway/internal/extension/types"
+	"github.com/wukongcloud/gateway/proto/extension"
 )
 
 var _ types.XDSHookClient = (*XDSHook)(nil)

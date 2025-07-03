@@ -21,7 +21,7 @@ func init() {
 }
 
 // RedirectTrailingSlashTest tests that only one slash in the redirect URL
-// See https://github.com/envoyproxy/gateway/issues/2976
+// See https://github.com/wukongcloud/gateway/issues/2976
 var RedirectTrailingSlashTest = suite.ConformanceTest{
 	ShortName:   "RedirectTrailingSlash",
 	Description: "Test that only one slash in the redirect URL",

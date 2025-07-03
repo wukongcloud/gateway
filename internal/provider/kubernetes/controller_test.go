@@ -19,12 +19,12 @@ import (
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 	gwapiv1b1 "sigs.k8s.io/gateway-api/apis/v1beta1"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/gatewayapi"
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
-	"github.com/envoyproxy/gateway/internal/logging"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/gatewayapi"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/logging"
 )
 
 func TestAddGatewayClassFinalizer(t *testing.T) {

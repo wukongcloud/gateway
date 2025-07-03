@@ -20,13 +20,13 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	fakeclient "sigs.k8s.io/controller-runtime/pkg/client/fake"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/gatewayapi"
-	"github.com/envoyproxy/gateway/internal/infrastructure/common"
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/proxy"
-	"github.com/envoyproxy/gateway/internal/ir"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/gatewayapi"
+	"github.com/wukongcloud/gateway/internal/infrastructure/common"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/proxy"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 func TestCreateOrUpdateProxyConfigMap(t *testing.T) {

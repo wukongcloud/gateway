@@ -11,12 +11,12 @@ import (
 
 	ctrl "sigs.k8s.io/controller-runtime"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/message"
-	"github.com/envoyproxy/gateway/internal/provider"
-	"github.com/envoyproxy/gateway/internal/provider/file"
-	"github.com/envoyproxy/gateway/internal/provider/kubernetes"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/message"
+	"github.com/wukongcloud/gateway/internal/provider"
+	"github.com/wukongcloud/gateway/internal/provider/file"
+	"github.com/wukongcloud/gateway/internal/provider/kubernetes"
 )
 
 type Config struct {

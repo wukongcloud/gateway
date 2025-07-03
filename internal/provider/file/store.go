@@ -24,8 +24,8 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
-	"github.com/envoyproxy/gateway/internal/message"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/message"
 )
 
 const (

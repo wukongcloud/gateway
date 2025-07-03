@@ -16,7 +16,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
 )
 
 func TestGenerateCerts(t *testing.T) {

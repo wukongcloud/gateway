@@ -12,7 +12,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
 )
 
 func newValidateCommand() *cobra.Command {

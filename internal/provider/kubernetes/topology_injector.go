@@ -16,8 +16,8 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi"
-	"github.com/envoyproxy/gateway/internal/metrics"
+	"github.com/wukongcloud/gateway/internal/gatewayapi"
+	"github.com/wukongcloud/gateway/internal/metrics"
 )
 
 type ProxyTopologyInjector struct {

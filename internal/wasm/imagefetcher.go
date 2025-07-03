@@ -40,7 +40,7 @@ import (
 	"github.com/google/go-containerregistry/pkg/v1/remote"
 	"github.com/google/go-containerregistry/pkg/v1/types"
 
-	"github.com/envoyproxy/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/logging"
 )
 
 // This file implements the fetcher of "Wasm Image Specification" compatible container images.

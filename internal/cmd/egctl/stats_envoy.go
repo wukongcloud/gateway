@@ -17,7 +17,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/yaml"
 
-	"github.com/envoyproxy/gateway/internal/kubernetes"
+	"github.com/wukongcloud/gateway/internal/kubernetes"
 )
 
 const (

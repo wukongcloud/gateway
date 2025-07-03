@@ -5,7 +5,7 @@
 
 package message
 
-import "github.com/envoyproxy/gateway/internal/metrics"
+import "github.com/wukongcloud/gateway/internal/metrics"
 
 var (
 	watchableDepth = metrics.NewGauge(

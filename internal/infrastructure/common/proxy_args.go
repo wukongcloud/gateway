@@ -8,9 +8,9 @@ package common
 import (
 	"fmt"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/xds/bootstrap"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/xds/bootstrap"
 )
 
 func getIPFamily(infra *ir.ProxyInfra) *egv1a1.IPFamily {

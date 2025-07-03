@@ -32,7 +32,7 @@ import (
 	"github.com/avast/retry-go"
 	"github.com/google/go-containerregistry/pkg/v1/remote/transport"
 
-	"github.com/envoyproxy/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/logging"
 )
 
 type permissionCacheOptions struct {

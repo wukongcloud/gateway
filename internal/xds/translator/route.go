@@ -19,9 +19,9 @@ import (
 	"google.golang.org/protobuf/types/known/wrapperspb"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/utils/proto"
-	"github.com/envoyproxy/gateway/internal/xds/utils/fractionalpercent"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/utils/proto"
+	"github.com/wukongcloud/gateway/internal/xds/utils/fractionalpercent"
 )
 
 const (

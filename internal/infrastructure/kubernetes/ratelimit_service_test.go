@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/ratelimit"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/ratelimit"
 )
 
 func TestDeleteRateLimitService(t *testing.T) {

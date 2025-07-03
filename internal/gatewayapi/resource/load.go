@@ -25,17 +25,17 @@ import (
 	gwapiv1b1 "sigs.k8s.io/gateway-api/apis/v1beta1"
 	"sigs.k8s.io/yaml"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/xds/bootstrap"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/xds/bootstrap"
 )
 
 const dummyClusterIP = "1.2.3.4"
 
 // LoadResourcesFromYAMLBytes will load Resources from given Kubernetes YAML string.
-// TODO: This function should be able to process arbitrary number of resources, tracked by https://github.com/envoyproxy/gateway/issues/3207.
+// TODO: This function should be able to process arbitrary number of resources, tracked by https://github.com/wukongcloud/gateway/issues/3207.
 func LoadResourcesFromYAMLBytes(yamlBytes []byte, addMissingResources bool) (*Resources, error) {
 	r, err := loadKubernetesYAMLToResources(yamlBytes, addMissingResources)
 	if err != nil {

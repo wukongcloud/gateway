@@ -7,6 +7,6 @@
 
 package tests
 
-import "github.com/envoyproxy/gateway/test/benchmark/suite"
+import "github.com/wukongcloud/gateway/test/benchmark/suite"
 
 var BenchmarkTests []suite.BenchmarkTest

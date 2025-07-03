@@ -21,14 +21,14 @@ import (
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 	gwapiv1a2 "sigs.k8s.io/gateway-api/apis/v1alpha2"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
-	"github.com/envoyproxy/gateway/internal/gatewayapi"
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/proxy"
-	"github.com/envoyproxy/gateway/internal/logging"
-	"github.com/envoyproxy/gateway/internal/message"
-	"github.com/envoyproxy/gateway/internal/provider/kubernetes/test"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
+	"github.com/wukongcloud/gateway/internal/gatewayapi"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/proxy"
+	"github.com/wukongcloud/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/message"
+	"github.com/wukongcloud/gateway/internal/provider/kubernetes/test"
 )
 
 // TestGatewayClassHasMatchingController tests the hasMatchingController

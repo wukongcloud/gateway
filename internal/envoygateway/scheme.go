@@ -13,7 +13,7 @@ import (
 	gwapischeme "sigs.k8s.io/gateway-api/pkg/client/clientset/versioned/scheme"
 	mcsapiv1a1 "sigs.k8s.io/mcs-api/pkg/apis/v1alpha1"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
 )
 
 // scheme contains all the API types necessary for the provider's dynamic

@@ -17,7 +17,7 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/apimachinery/pkg/types"
 
-	kube "github.com/envoyproxy/gateway/internal/kubernetes"
+	kube "github.com/wukongcloud/gateway/internal/kubernetes"
 )
 
 func newEnvoyDashboardCmd() *cobra.Command {

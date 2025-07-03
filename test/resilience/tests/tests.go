@@ -7,6 +7,6 @@
 
 package tests
 
-import "github.com/envoyproxy/gateway/test/resilience/suite"
+import "github.com/wukongcloud/gateway/test/resilience/suite"
 
 var ResilienceTests []suite.ResilienceTest

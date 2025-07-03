@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"net/url"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
 )
 
 // ValidateEnvoyGateway validates the provided EnvoyGateway.

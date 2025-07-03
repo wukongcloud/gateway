@@ -23,7 +23,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/tools/remotecommand"
 
-	"github.com/envoyproxy/gateway/internal/envoygateway"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
 )
 
 type CLIClient interface {

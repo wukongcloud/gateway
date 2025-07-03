@@ -33,8 +33,8 @@ import (
 	"github.com/google/go-containerregistry/pkg/registry"
 	"github.com/stretchr/testify/require"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/logging"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/logging"
 )
 
 func TestPermissionCache(t *testing.T) {

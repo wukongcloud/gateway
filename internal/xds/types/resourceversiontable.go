@@ -13,8 +13,8 @@ import (
 	resourcev3 "github.com/envoyproxy/go-control-plane/pkg/resource/v3"
 	protobuf "google.golang.org/protobuf/proto"
 
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/utils/proto"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/utils/proto"
 )
 
 // XdsResources represents all the xds resources

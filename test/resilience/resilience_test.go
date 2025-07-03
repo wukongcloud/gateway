@@ -17,9 +17,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 	"sigs.k8s.io/gateway-api/conformance/utils/flags"
 
-	"github.com/envoyproxy/gateway/test/resilience/suite"
-	"github.com/envoyproxy/gateway/test/resilience/tests"
-	kubetest "github.com/envoyproxy/gateway/test/utils/kubernetes"
+	"github.com/wukongcloud/gateway/test/resilience/suite"
+	"github.com/wukongcloud/gateway/test/resilience/tests"
+	kubetest "github.com/wukongcloud/gateway/test/utils/kubernetes"
 )
 
 func TestResilience(t *testing.T) {

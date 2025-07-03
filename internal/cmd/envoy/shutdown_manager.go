@@ -16,9 +16,9 @@ import (
 	"syscall"
 	"time"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/logging"
-	"github.com/envoyproxy/gateway/internal/xds/bootstrap"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/xds/bootstrap"
 )
 
 // TODO: Remove the global logger and localize the scope of the logger.

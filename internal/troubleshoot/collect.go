@@ -13,7 +13,7 @@ import (
 	tbcollect "github.com/replicatedhq/troubleshoot/pkg/collect"
 	"k8s.io/client-go/rest"
 
-	"github.com/envoyproxy/gateway/internal/troubleshoot/collect"
+	"github.com/wukongcloud/gateway/internal/troubleshoot/collect"
 )
 
 func CollectResult(ctx context.Context, restConfig *rest.Config, bundlePath, egNamespace string) tbcollect.CollectorResult {

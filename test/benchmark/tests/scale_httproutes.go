@@ -17,7 +17,7 @@ import (
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 	"sigs.k8s.io/gateway-api/conformance/utils/kubernetes"
 
-	"github.com/envoyproxy/gateway/test/benchmark/suite"
+	"github.com/wukongcloud/gateway/test/benchmark/suite"
 )
 
 func init() {

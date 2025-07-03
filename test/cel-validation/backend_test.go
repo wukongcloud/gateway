@@ -18,7 +18,7 @@ import (
 	"k8s.io/utils/ptr"
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
 )
 
 func TestBackend(t *testing.T) {

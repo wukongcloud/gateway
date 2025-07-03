@@ -5,8 +5,8 @@ package v1alpha1
 import (
 	http "net/http"
 
-	apiv1alpha1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	scheme "github.com/envoyproxy/gateway/pkg/client/clientset/versioned/scheme"
+	apiv1alpha1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	scheme "github.com/wukongcloud/gateway/pkg/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 

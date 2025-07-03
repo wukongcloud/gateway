@@ -21,7 +21,7 @@ import (
 	"google.golang.org/protobuf/types/known/durationpb"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	pb "github.com/envoyproxy/gateway/proto/extension"
+	pb "github.com/wukongcloud/gateway/proto/extension"
 )
 
 type testingExtensionServer struct {

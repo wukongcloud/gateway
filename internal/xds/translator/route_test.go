@@ -12,7 +12,7 @@ import (
 	routev3 "github.com/envoyproxy/go-control-plane/envoy/config/route/v3"
 	"k8s.io/utils/ptr"
 
-	"github.com/envoyproxy/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 func TestBuildHashPolicy(t *testing.T) {

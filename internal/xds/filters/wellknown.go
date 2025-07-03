@@ -16,7 +16,7 @@ import (
 	"github.com/envoyproxy/go-control-plane/pkg/wellknown"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	"github.com/envoyproxy/gateway/internal/utils/proto"
+	"github.com/wukongcloud/gateway/internal/utils/proto"
 )
 
 var GRPCWeb, GRPCStats *hcm.HttpFilter

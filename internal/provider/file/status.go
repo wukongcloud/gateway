@@ -14,7 +14,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"sigs.k8s.io/yaml"
 
-	"github.com/envoyproxy/gateway/internal/provider/kubernetes"
+	"github.com/wukongcloud/gateway/internal/provider/kubernetes"
 )
 
 type StatusHandler struct {

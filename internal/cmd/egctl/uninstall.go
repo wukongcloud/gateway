@@ -8,8 +8,8 @@ package egctl
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/envoyproxy/gateway/internal/cmd/options"
-	"github.com/envoyproxy/gateway/internal/utils/helm"
+	"github.com/wukongcloud/gateway/internal/cmd/options"
+	"github.com/wukongcloud/gateway/internal/utils/helm"
 )
 
 func newUnInstallCommand() *cobra.Command {

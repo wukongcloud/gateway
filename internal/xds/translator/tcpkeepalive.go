@@ -8,7 +8,7 @@ package translator
 import (
 	corev3 "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 
-	"github.com/envoyproxy/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 // buildTCPSocketOptions converts listener downstream settings to xds socketOptions

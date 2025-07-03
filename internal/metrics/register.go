@@ -21,11 +21,11 @@ import (
 	"go.opentelemetry.io/otel/sdk/metric"
 	metricsserver "sigs.k8s.io/controller-runtime/pkg/metrics"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	log "github.com/envoyproxy/gateway/internal/logging"
-	"github.com/envoyproxy/gateway/internal/metrics/restclient"
-	"github.com/envoyproxy/gateway/internal/metrics/workqueue"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	log "github.com/wukongcloud/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/metrics/restclient"
+	"github.com/wukongcloud/gateway/internal/metrics/workqueue"
 )
 
 const (

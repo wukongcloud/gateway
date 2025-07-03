@@ -15,7 +15,7 @@ import (
 	k8sclient "sigs.k8s.io/controller-runtime/pkg/client"
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
 )
 
 // ValidateSecretObjectReference validate secret object reference for extension tls and ratelimit tls settings.

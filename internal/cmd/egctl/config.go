@@ -22,10 +22,10 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/yaml"
 
-	"github.com/envoyproxy/gateway/internal/cmd/options"
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/proxy"
-	kube "github.com/envoyproxy/gateway/internal/kubernetes"
-	"github.com/envoyproxy/gateway/internal/utils"
+	"github.com/wukongcloud/gateway/internal/cmd/options"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/proxy"
+	kube "github.com/wukongcloud/gateway/internal/kubernetes"
+	"github.com/wukongcloud/gateway/internal/utils"
 )
 
 var (

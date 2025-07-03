@@ -21,8 +21,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/proxy"
-	"github.com/envoyproxy/gateway/internal/metrics"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/proxy"
+	"github.com/wukongcloud/gateway/internal/metrics"
 )
 
 // createOrUpdateServiceAccount creates a ServiceAccount in the kube api server based on the
@@ -153,7 +153,7 @@ func (i *Infra) createOrUpdateDeployment(ctx context.Context, r ResourceRender) 
 		// Note: Deployment created by the old gateway controller may have a different selector generated based on a custom label feature,
 		// and it caused the issue that the gateway controller cannot update the deployment when users change the custom labels.
 		// Therefore, we changed the gateway to always use the same selector, independent of the custom labels -
-		// https://github.com/envoyproxy/gateway/issues/1818
+		// https://github.com/wukongcloud/gateway/issues/1818
 		//
 		// But, the change could break an existing deployment with custom labels initiated by the old gateway controller
 		// because the selector would be different.
@@ -240,7 +240,7 @@ func (i *Infra) createOrUpdateDaemonSet(ctx context.Context, r ResourceRender) (
 		// Note: Daemonset created by the old gateway controller may have a different selector generated based on a custom label feature,
 		// and it caused the issue that the gateway controller cannot update the daemonset when users change the custom labels.
 		// Therefore, we changed the gateway to always use the same selector, independent of the custom labels -
-		// https://github.com/envoyproxy/gateway/issues/1818
+		// https://github.com/wukongcloud/gateway/issues/1818
 		//
 		// But, the change could break an existing daemonset with custom labels initiated by the old gateway controller
 		// because the selector would be different.

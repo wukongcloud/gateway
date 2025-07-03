@@ -18,7 +18,7 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/tests"
 	"sigs.k8s.io/gateway-api/conformance/utils/suite"
 
-	internalconf "github.com/envoyproxy/gateway/internal/gatewayapi/conformance"
+	internalconf "github.com/wukongcloud/gateway/internal/gatewayapi/conformance"
 )
 
 func TestGatewayAPIConformance(t *testing.T) {

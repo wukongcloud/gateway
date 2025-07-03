@@ -15,12 +15,12 @@ import (
 	"github.com/stretchr/testify/require"
 	funcE "github.com/tetratelabs/func-e/api"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/crypto"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/logging"
-	"github.com/envoyproxy/gateway/internal/utils/file"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/crypto"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/utils/file"
 )
 
 func newMockInfra(t *testing.T, cfg *config.Server) *Infra {

@@ -19,10 +19,10 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/ratelimit"
-	"github.com/envoyproxy/gateway/internal/kubernetes"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/ratelimit"
+	"github.com/wukongcloud/gateway/internal/kubernetes"
 )
 
 var (

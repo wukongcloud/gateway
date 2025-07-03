@@ -22,7 +22,7 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/suite"
 	"sigs.k8s.io/gateway-api/pkg/features"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi/conformance"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/conformance"
 )
 
 const (

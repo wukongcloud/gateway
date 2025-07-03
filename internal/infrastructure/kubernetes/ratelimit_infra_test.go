@@ -15,8 +15,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/ratelimit"
-	"github.com/envoyproxy/gateway/internal/provider/kubernetes"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/ratelimit"
+	"github.com/wukongcloud/gateway/internal/provider/kubernetes"
 )
 
 func createRateLimitTLSSecret(t *testing.T, client client.Client) {

@@ -10,7 +10,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 
-	"github.com/envoyproxy/gateway/internal/utils"
+	"github.com/wukongcloud/gateway/internal/utils"
 )
 
 type resourceMappings struct {

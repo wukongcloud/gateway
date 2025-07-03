@@ -3,9 +3,9 @@
 package fake
 
 import (
-	clientset "github.com/envoyproxy/gateway/pkg/client/clientset/versioned"
-	gatewayv1alpha1 "github.com/envoyproxy/gateway/pkg/client/clientset/versioned/typed/api/v1alpha1"
-	fakegatewayv1alpha1 "github.com/envoyproxy/gateway/pkg/client/clientset/versioned/typed/api/v1alpha1/fake"
+	clientset "github.com/wukongcloud/gateway/pkg/client/clientset/versioned"
+	gatewayv1alpha1 "github.com/wukongcloud/gateway/pkg/client/clientset/versioned/typed/api/v1alpha1"
+	fakegatewayv1alpha1 "github.com/wukongcloud/gateway/pkg/client/clientset/versioned/typed/api/v1alpha1/fake"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"

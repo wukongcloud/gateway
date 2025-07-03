@@ -28,9 +28,9 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/suite"
 	"sigs.k8s.io/gateway-api/conformance/utils/tlog"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/gatewayapi"
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/gatewayapi"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
 )
 
 const (
@@ -162,7 +162,7 @@ func testOIDC(t *testing.T, suite *suite.ConformanceTestSuite, securityPolicyMan
 			if err := oidcClient.ParseLoginForm(res.Body, keyCloakLoginFormID); err != nil {
 				tlog.Logf(t, "failed to parse login form: %v", err)
 				// recreate the security policy to force repushing the configuration to the envoy proxy to recover from the error.
-				// This is a workaround for the flaky test: https://github.com/envoyproxy/gateway/issues/3898
+				// This is a workaround for the flaky test: https://github.com/wukongcloud/gateway/issues/3898
 				// TODO: we should investigate the root cause of the flakiness and remove this workaround
 				existingSP := &egv1a1.SecurityPolicy{
 					ObjectMeta: metav1.ObjectMeta{

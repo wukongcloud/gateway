@@ -15,7 +15,7 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/envoyproxy/gateway/test/utils"
+	"github.com/wukongcloud/gateway/test/utils"
 )
 
 func QueryPrometheus(c client.Client, promQL string) (model.Value, error) {

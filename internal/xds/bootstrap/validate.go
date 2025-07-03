@@ -13,8 +13,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"google.golang.org/protobuf/testing/protocmp"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/utils/proto"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/utils/proto"
 )
 
 func fetchAndPatchBootstrap(boostrapConfig *egv1a1.ProxyBootstrap) (*bootstrapv3.Bootstrap, *bootstrapv3.Bootstrap, error) {

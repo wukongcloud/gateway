@@ -11,8 +11,8 @@ import (
 
 	fuzz "github.com/AdaLogics/go-fuzz-headers"
 
-	"github.com/envoyproxy/gateway/internal/cmd/egctl"
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/cmd/egctl"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
 )
 
 func FuzzGatewayAPIToXDS(f *testing.F) {

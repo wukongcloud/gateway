@@ -8,8 +8,8 @@ package ratelimit
 import (
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/ir"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/ir"
 )
 
 func UnitToSeconds(unit egv1a1.RateLimitUnit) int64 {

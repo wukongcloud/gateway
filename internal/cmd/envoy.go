@@ -10,7 +10,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/envoyproxy/gateway/internal/cmd/envoy"
+	"github.com/wukongcloud/gateway/internal/cmd/envoy"
 )
 
 // GetEnvoyCommand returns the envoy cobra command to be executed.

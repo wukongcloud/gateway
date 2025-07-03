@@ -10,7 +10,7 @@
 package resource
 
 import (
-	"github.com/envoyproxy/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/api/v1alpha1"
 	corev1 "k8s.io/api/core/v1"
 	discoveryv1 "k8s.io/api/discovery/v1"
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"

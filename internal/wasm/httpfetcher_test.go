@@ -35,8 +35,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/logging"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/logging"
 )
 
 func TestWasmHTTPFetch(t *testing.T) {

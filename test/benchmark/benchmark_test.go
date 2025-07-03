@@ -11,9 +11,9 @@ import (
 	"flag"
 	"testing"
 
-	"github.com/envoyproxy/gateway/test/benchmark/suite"
-	"github.com/envoyproxy/gateway/test/benchmark/tests"
-	kubetest "github.com/envoyproxy/gateway/test/utils/kubernetes"
+	"github.com/wukongcloud/gateway/test/benchmark/suite"
+	"github.com/wukongcloud/gateway/test/benchmark/tests"
+	kubetest "github.com/wukongcloud/gateway/test/utils/kubernetes"
 )
 
 func TestBenchmark(t *testing.T) {

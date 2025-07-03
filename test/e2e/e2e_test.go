@@ -21,8 +21,8 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/tlog"
 	"sigs.k8s.io/gateway-api/pkg/features"
 
-	"github.com/envoyproxy/gateway/test/e2e/tests"
-	kubetest "github.com/envoyproxy/gateway/test/utils/kubernetes"
+	"github.com/wukongcloud/gateway/test/e2e/tests"
+	kubetest "github.com/wukongcloud/gateway/test/utils/kubernetes"
 )
 
 func TestE2E(t *testing.T) {
@@ -40,7 +40,7 @@ func TestE2E(t *testing.T) {
 	}
 
 	skipTests := []string{
-		tests.GatewayInfraResourceTest.ShortName, // https://github.com/envoyproxy/gateway/issues/3191
+		tests.GatewayInfraResourceTest.ShortName, // https://github.com/wukongcloud/gateway/issues/3191
 	}
 
 	// Skip test only work on DualStack cluster

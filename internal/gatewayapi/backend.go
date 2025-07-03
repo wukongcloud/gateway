@@ -12,8 +12,8 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/validation"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/gatewayapi/status"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/status"
 )
 
 func (t *Translator) ProcessBackends(backends []*egv1a1.Backend) []*egv1a1.Backend {

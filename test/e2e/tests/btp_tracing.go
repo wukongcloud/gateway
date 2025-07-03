@@ -15,8 +15,8 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/kubernetes"
 	"sigs.k8s.io/gateway-api/conformance/utils/suite"
 
-	"github.com/envoyproxy/gateway/internal/utils/naming"
-	"github.com/envoyproxy/gateway/test/utils/tracing"
+	"github.com/wukongcloud/gateway/internal/utils/naming"
+	"github.com/wukongcloud/gateway/test/utils/tracing"
 )
 
 func init() {

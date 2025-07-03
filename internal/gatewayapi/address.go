@@ -8,7 +8,7 @@ package gatewayapi
 import (
 	gwapiv1 "sigs.k8s.io/gateway-api/apis/v1"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
 )
 
 var _ AddressesTranslator = (*Translator)(nil)

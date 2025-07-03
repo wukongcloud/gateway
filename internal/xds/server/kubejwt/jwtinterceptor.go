@@ -15,7 +15,7 @@ import (
 	"google.golang.org/grpc/metadata"
 	"k8s.io/client-go/kubernetes"
 
-	"github.com/envoyproxy/gateway/internal/xds/cache"
+	"github.com/wukongcloud/gateway/internal/xds/cache"
 )
 
 // JWTAuthInterceptor verifies Kubernetes Service Account JWT tokens in gRPC requests.

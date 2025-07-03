@@ -28,7 +28,7 @@ import (
 	"go.opentelemetry.io/otel/sdk/resource"
 	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
 
-	"github.com/envoyproxy/gateway/internal/utils/test"
+	"github.com/wukongcloud/gateway/internal/utils/test"
 )
 
 func TestCounter(t *testing.T) {

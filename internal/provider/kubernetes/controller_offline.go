@@ -19,10 +19,10 @@ import (
 	gwapiv1a3 "sigs.k8s.io/gateway-api/apis/v1alpha3"
 	gwapiv1b1 "sigs.k8s.io/gateway-api/apis/v1beta1"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/message"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/message"
 )
 
 // OfflineGatewayAPIReconciler can be used for non-kuberetes provider.
@@ -89,7 +89,7 @@ func NewOfflineGatewayAPIController(
 		tcpRouteCRDExists:      true,
 		tlsRouteCRDExists:      true,
 		udpRouteCRDExists:      true,
-		// TODO: enable this for consistency after the foundamental fix is available https://github.com/envoyproxy/gateway/pull/6021.
+		// TODO: enable this for consistency after the foundamental fix is available https://github.com/wukongcloud/gateway/pull/6021.
 		// In practice, this won't affect any user-facing reconciliation logic for now but it might in the future.
 		backendCRDExists: false,
 	}

@@ -11,11 +11,11 @@ import (
 	"os"
 	"path/filepath"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/infrastructure/common"
-	"github.com/envoyproxy/gateway/internal/logging"
-	"github.com/envoyproxy/gateway/internal/utils/file"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/infrastructure/common"
+	"github.com/wukongcloud/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/utils/file"
 )
 
 const (

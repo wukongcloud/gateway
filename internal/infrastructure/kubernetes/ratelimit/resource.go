@@ -17,9 +17,9 @@ import (
 	"k8s.io/utils/ptr"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/resource"
-	"github.com/envoyproxy/gateway/internal/kubernetes"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/resource"
+	"github.com/wukongcloud/gateway/internal/kubernetes"
 )
 
 const (

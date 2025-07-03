@@ -38,9 +38,9 @@ import (
 	"google.golang.org/protobuf/types/known/wrapperspb"
 	"k8s.io/utils/ptr"
 
-	egv1a1 "github.com/envoyproxy/gateway/api/v1alpha1"
-	"github.com/envoyproxy/gateway/internal/ir"
-	"github.com/envoyproxy/gateway/internal/utils/proto"
+	egv1a1 "github.com/wukongcloud/gateway/api/v1alpha1"
+	"github.com/wukongcloud/gateway/internal/ir"
+	"github.com/wukongcloud/gateway/internal/utils/proto"
 )
 
 const (
@@ -647,7 +647,7 @@ func buildXdsClusterLoadAssignment(clusterName string, destSettings []*ir.Destin
 		// so in order to support traffic splitting we rely on weighted clusters defined at the route level
 		// if multiple backendRefs exist. This pushes part of the routing logic higher up the stack which can
 		// limit host selection controls during retries and session affinity.
-		// For more details see https://github.com/envoyproxy/gateway/issues/5307#issuecomment-2688767482
+		// For more details see https://github.com/wukongcloud/gateway/issues/5307#issuecomment-2688767482
 		if ds.ZoneAwareRoutingEnabled {
 			localities = append(localities, buildZonalLocalities(metadata, ds)...)
 		} else {

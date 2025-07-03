@@ -18,7 +18,7 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/kubernetes"
 	"sigs.k8s.io/gateway-api/conformance/utils/tlog"
 
-	"github.com/envoyproxy/gateway/test/resilience/suite"
+	"github.com/wukongcloud/gateway/test/resilience/suite"
 )
 
 func init() {

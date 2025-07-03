@@ -18,9 +18,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	kube "github.com/envoyproxy/gateway/internal/kubernetes"
-	"github.com/envoyproxy/gateway/internal/troubleshoot/collect"
-	prom "github.com/envoyproxy/gateway/test/utils/prometheus"
+	kube "github.com/wukongcloud/gateway/internal/kubernetes"
+	"github.com/wukongcloud/gateway/internal/troubleshoot/collect"
+	prom "github.com/wukongcloud/gateway/test/utils/prometheus"
 )
 
 const (

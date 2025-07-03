@@ -437,7 +437,7 @@ const (
 )
 
 // EnvoyProxyStatus defines the observed state of EnvoyProxy. This type is not implemented
-// until https://github.com/envoyproxy/gateway/issues/1007 is fixed.
+// until https://github.com/wukongcloud/gateway/issues/1007 is fixed.
 type EnvoyProxyStatus struct {
 	// INSERT ADDITIONAL STATUS FIELDS - define observed state of cluster.
 	// Important: Run "make" to regenerate code after modifying this file.

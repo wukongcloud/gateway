@@ -27,9 +27,9 @@ import (
 	serverv3 "github.com/envoyproxy/go-control-plane/pkg/server/v3"
 	"go.uber.org/zap"
 
-	"github.com/envoyproxy/gateway/internal/logging"
-	"github.com/envoyproxy/gateway/internal/metrics"
-	"github.com/envoyproxy/gateway/internal/xds/types"
+	"github.com/wukongcloud/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/metrics"
+	"github.com/wukongcloud/gateway/internal/xds/types"
 )
 
 var Hash = cachev3.IDHash{}

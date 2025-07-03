@@ -22,10 +22,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/yaml"
 
-	"github.com/envoyproxy/gateway/internal/gatewayapi/resource"
-	"github.com/envoyproxy/gateway/internal/utils/field"
-	"github.com/envoyproxy/gateway/internal/utils/file"
-	"github.com/envoyproxy/gateway/internal/utils/test"
+	"github.com/wukongcloud/gateway/internal/gatewayapi/resource"
+	"github.com/wukongcloud/gateway/internal/utils/field"
+	"github.com/wukongcloud/gateway/internal/utils/file"
+	"github.com/wukongcloud/gateway/internal/utils/test"
 )
 
 func TestTranslate(t *testing.T) {

@@ -20,11 +20,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/client"
 	clicfg "sigs.k8s.io/controller-runtime/pkg/client/config"
 
-	"github.com/envoyproxy/gateway/internal/crypto"
-	"github.com/envoyproxy/gateway/internal/envoygateway"
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/provider/kubernetes"
-	"github.com/envoyproxy/gateway/internal/utils/file"
+	"github.com/wukongcloud/gateway/internal/crypto"
+	"github.com/wukongcloud/gateway/internal/envoygateway"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/provider/kubernetes"
+	"github.com/wukongcloud/gateway/internal/utils/file"
 )
 
 // cfgPath is the path to the EnvoyGateway configuration file.

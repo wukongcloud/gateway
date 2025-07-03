@@ -11,7 +11,7 @@ import (
 	"github.com/spf13/cobra"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
 
-	"github.com/envoyproxy/gateway/internal/cmd/options"
+	"github.com/wukongcloud/gateway/internal/cmd/options"
 )
 
 func newConfigCommand() *cobra.Command {

@@ -20,7 +20,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	pb "github.com/envoyproxy/gateway/proto/extension"
+	pb "github.com/wukongcloud/gateway/proto/extension"
 )
 
 func main() {

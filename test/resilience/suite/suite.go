@@ -17,9 +17,9 @@ import (
 	"sigs.k8s.io/gateway-api/conformance/utils/config"
 	"sigs.k8s.io/gateway-api/conformance/utils/roundtripper"
 
-	opt "github.com/envoyproxy/gateway/internal/cmd/options"
-	kube "github.com/envoyproxy/gateway/internal/kubernetes"
-	"github.com/envoyproxy/gateway/test/utils/kubernetes"
+	opt "github.com/wukongcloud/gateway/internal/cmd/options"
+	kube "github.com/wukongcloud/gateway/internal/kubernetes"
+	"github.com/wukongcloud/gateway/test/utils/kubernetes"
 )
 
 const (

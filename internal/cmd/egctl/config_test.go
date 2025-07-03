@@ -25,11 +25,11 @@ import (
 	"k8s.io/client-go/kubernetes/fake"
 	"k8s.io/client-go/rest"
 
-	"github.com/envoyproxy/gateway/internal/infrastructure/kubernetes/ratelimit"
-	kube "github.com/envoyproxy/gateway/internal/kubernetes"
-	"github.com/envoyproxy/gateway/internal/utils/file"
-	netutil "github.com/envoyproxy/gateway/internal/utils/net"
-	"github.com/envoyproxy/gateway/internal/utils/test"
+	"github.com/wukongcloud/gateway/internal/infrastructure/kubernetes/ratelimit"
+	kube "github.com/wukongcloud/gateway/internal/kubernetes"
+	"github.com/wukongcloud/gateway/internal/utils/file"
+	netutil "github.com/wukongcloud/gateway/internal/utils/net"
+	"github.com/wukongcloud/gateway/internal/utils/test"
 )
 
 const (

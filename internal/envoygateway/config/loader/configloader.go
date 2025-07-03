@@ -10,9 +10,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/envoyproxy/gateway/internal/envoygateway/config"
-	"github.com/envoyproxy/gateway/internal/filewatcher"
-	"github.com/envoyproxy/gateway/internal/logging"
+	"github.com/wukongcloud/gateway/internal/envoygateway/config"
+	"github.com/wukongcloud/gateway/internal/filewatcher"
+	"github.com/wukongcloud/gateway/internal/logging"
 )
 
 type HookFunc func(c context.Context, cfg *config.Server) error
